@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameTutorial1.MainPage"
+             BackgroundColor="LightSteelBlue">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to TIC TAC TOE!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" VerticalOptions="Center"/>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Button00" Grid.Row="0" Grid.Column="0" BackgroundColor="Ivory"
+                    Clicked="Button00_Clicked"/>
+            <Button x:Name="Button01" Grid.Row="0" Grid.Column="1" BackgroundColor="Ivory"
+                    Clicked="Button01_Clicked"/>
+            <Button x:Name="Button02" Grid.Row="0" Grid.Column="2" BackgroundColor="Ivory"
+                    Clicked="Button02_Clicked"/>
+            <Button x:Name="Button10" Grid.Row="1" Grid.Column="0" BackgroundColor="Ivory"
+                    Clicked="Button10_Clicked"/>
+            <Button x:Name="Button11" Grid.Row="1" Grid.Column="1" BackgroundColor="Ivory"
+                    Clicked="Button11_Clicked"/>
+            <Button x:Name="Button12" Grid.Row="1" Grid.Column="2" BackgroundColor="Ivory"
+                    Clicked="Button12_Clicked"/>
+            <Button x:Name="Button20" Grid.Row="2" Grid.Column="0" BackgroundColor="Ivory"
+                    Clicked="Button20_Clicked"/>
+            <Button x:Name="Button21" Grid.Row="2" Grid.Column="1" BackgroundColor="Ivory"
+                    Clicked="Button21_Clicked"/>
+            <Button x:Name="Button22" Grid.Row="2" Grid.Column="2" BackgroundColor="Ivory"
+                    Clicked="Button22_Clicked"/>
+        </Grid>
+        <Button Text="Restart" Clicked="Restart_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
